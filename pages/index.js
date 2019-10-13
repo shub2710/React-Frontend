@@ -20,7 +20,7 @@ export default () =>  {
   
   const getLoanDetails = async () =>{
     if(loanDuration < 24 && loanDuration > 6 && loanAmount >500 && loanAmount < 5000 ){
-      console.log('Fetching Loan details',loanAmount ,loanDuration );  
+      // console.log('Fetching Loan details',loanAmount ,loanDuration );  
       try {
         const data = await fetch(`${process.env.API_URL}interest?amount=${loanAmount}&numMonths=${loanDuration}`);
         const loanDetails = await data.json();
@@ -50,10 +50,12 @@ export default () =>  {
     }
   }
 
+  // Get history 
   useEffect(()=>{
     getHistory()
   },[])
 
+  // Get Loan Details on Loan Duration Value Changes
   useEffect(()=>{
     getLoanDetails()
   },[loanDuration])
@@ -63,12 +65,12 @@ export default () =>  {
   }
   
    const loanDurationChange = (value) => {
-    console.log('changed', value);
+    // console.log('changed', value);
     setDurationAmount(value)
   }
 
   const onLoanAmountChange = (value) =>{
-    console.log('Loan Amount has changed: ', value);
+    // console.log('Loan Amount has changed: ', value);
     setLoanAmount(value)
   }
 

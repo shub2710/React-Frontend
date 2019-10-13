@@ -1,3 +1,5 @@
+// Showcases the Loan Details 
+
 import  React from 'react'
 
 export default (props) =>{

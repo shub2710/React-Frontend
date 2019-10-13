@@ -1,3 +1,5 @@
+// Includes Loan Input elements : Loan Amount and Loan Duration
+
 import React from 'react'
 import {Layout,  Menu, Icon, Slider, InputNumber,Spin } from 'antd';
 
