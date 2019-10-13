@@ -13,7 +13,7 @@ Overview
 
 
 Installation and How to run the project 
-    1. Clone or download the project 
-    2. CD into the cloned directory.
-    3. Run npm install (Node js should be installed in the system)
-    4. Run npm run dev to run the project, you will have a running application on port 3000.
+1. Clone or download the project 
+2. CD into the cloned directory.
+3. Run npm install (Node js should be installed in the system)
+4. Run npm run dev to run the project, you will have a running application on port 3000.
