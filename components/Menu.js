@@ -8,7 +8,7 @@ export default ({collapsed, loanHistory, selectHistoryItem}) =>{
     return (
         <Sider trigger={null} collapsible collapsed={collapsed}>
         <div className="logo" > </div>
-        <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}  style={{maxHeight: 400,overflowY: 'scroll'}}>
+        <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}  style={{maxHeight: 400,overflowY: 'scroll', overflowX: 'hidden'}}>
           <Menu.Item key="1">
             <Icon type="user" />
             <span>loan History</span>
